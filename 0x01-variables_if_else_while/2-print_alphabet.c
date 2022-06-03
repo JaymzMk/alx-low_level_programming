@@ -1,22 +1,17 @@
 #include <stdio.h>
-#include <ctype.h>
 /**
- * main - my entry point
- * Description: print alphabet starting with lowercase then uppercase
- * Return: 0
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char al;
 
-	for (al = 'a'; al <= 'z'; al++)
-	{
-		putchar(al);
-	}
-	for (al = 'A'; al <= 'Z'; al++)
-	{
-		putchar(al);
-	}
-	putchar('\n');
-	return (0);
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
+		putchar(c);
+		putchar('\n');
+
+return (0);
 }
