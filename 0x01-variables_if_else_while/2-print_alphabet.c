@@ -1,20 +1,21 @@
 #include <stdio.h>
-
+#include <ctype.h>
 /**
- * main - prints the alphabet in lowercase, and then in uppercase,
- * followed by a new line
- * Return: Always 0 (Success)
+ * main - my entry point
+ * Description: print alphabet starting with lowercase then uppercase
+ * Return: 0
  */
 int main(void)
 {
-	int ch;
+	char al;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
+	for (al = 'a'; al <= 'z'; al++)
 	{
-		putchar(ch);
+		putchar(al);
 	}
-	for (ch = 'A'; ch <= 'Z'; ch++)
-	{	putchar(ch);
+	for (al = 'A'; al <= 'Z'; al++)
+	{
+		putchar(al);
 	}
 	putchar('\n');
 	return (0);
