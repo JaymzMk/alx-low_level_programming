@@ -1,21 +1,24 @@
- #include <stdio.h>
+#include <stdio.h>
+
 /**
- * Description: prints all sizes in c
- * Return: 0
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-        char a;
-        int b;
-        int long c;
-        int long long d;
-        int float e;
+	char c;
+	int i;
+	long l;
+	long long ll;
+	float afloat;
 
-        printf("Size of a char: %zu byte(s)\n", sizeof(a));
-        printf("Size of an int: %zu byte(s)\n", sizeof(b));
-        printf("Size of a long int: %zu byte(s)\n", sizeof(c));
-        printf("Size of a long long int: %zu byte(s)\n", sizeof(d));
-        printf("Size of a float: %zu byte(s)\n", sizeof(e));
+	printf("Size of a char: %lu byte(s)\n", sizeof(c));
+	printf("Size of an int: %lu byte(s)\n", sizeof(i));
+	printf("Size of a long int: %lu byte(s)\n", sizeof(l));
+	printf("Size of a long long int: %lu byte(s)\n", sizeof(ll));
+	printf("Size of a float: %lu byte(s)\n", sizeof(afloat));
 
-	return (0)
+	return (0);
 }
