@@ -1,9 +1,10 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
  * print_to_98 - prints numbers to 98
  * @a: starting integer
- * Description: prints all natural number from n - 98
+ * Description: prints all natural number from a - 98
  *
  * Return: void
  */
