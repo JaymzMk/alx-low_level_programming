@@ -7,25 +7,18 @@
  */
 int main(void)
 {
-	long int a, b, c, next;
+	long int i, a = 1, b = 2, sum = 0;
 
-	b = 1;
-
-	c = 2;
-
-	for (a = 1; a <= 50; ++a)
+	for (i = 1; i < 50; i++)
 	{
-		if (b != 20365011074)
+		printf("%ld, ", t1);
+		sum = a + b;
+		a = b;
+		b = sum;
+		if (i == 49)
 		{
-			printf("%ld, ", b);
-		} else
-		{
-			printf("%ld\n", b);
+			printf("%ld\n", a);
 		}
-		next = b + c;
-		b = k;
-		c = next;
 	}
-
 	return (0);
 }
