@@ -23,4 +23,4 @@ char *_strncat(char *dest, char *src, int n)
 		a++;
 		b++;
 	}
-	return (
+	return (dest);
