@@ -16,13 +16,13 @@ int _strlen_recursion(char *s)
 }
 
 /**
- * p1 - palindrome
+ * p_r - palindrome
  * @s: pointer to string
  * @l: position
  * Return: boolena
  */
 
-int p_rec(char *s, int l)
+int p_r(char *s, int l)
 {
 	if (l < 1)
 	{
@@ -31,7 +31,7 @@ int p_rec(char *s, int l)
 
 	if (*s == *(s + l))
 	{
-		return (p_rec(s + 1, l - 2));
+		return (p_r(s + 1, l - 2));
 	}
 	return (0);
 }
@@ -46,5 +46,5 @@ int is_palindrome(char *s)
 {
 	int len = _strlen_recursion(s);
 
-	return (p_rec(s, len - 1));
+	return (p_r(s, len - 1));
 }
